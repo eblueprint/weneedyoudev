@@ -1,0 +1,27 @@
+autorun.inf|45
+config_Quotient_VR_27.bin|23274
+images_Quotient_VR_27.zip|113082
+map\multilanguage\english.zip|22
+map\multilanguage\france.zip|22
+map\multilanguage\german.zip|22
+map\multilanguage\italy.zip|22
+map\multilanguage\japanese.zip|22
+map\multilanguage\spanish.zip|22
+map\multilanguage\Quotient VR_Quotient_VR_27.html|2377
+map\multilanguage\Quotient_VR_27.html|1252
+map\multilanguage\resources\movieclose.swf|2695
+map\multilanguage\resources\quotient_vr_27_quotient_logo.gif|3759
+map\multilanguage\resources\video_14.flv|2470917
+map\multilanguage\resources\video_17.flv|2936449
+map\multilanguage\resources\video_20.flv|2703993
+map\multilanguage\resources\youtube.swf|1845
+map\multilanguage\resources\resources_Quotient_VR_27.zip|32407
+map\multilanguage\resources\scene\reception2.jpg|4886295
+map\multilanguage\resources\scene\reception2.zip|10631
+map\multilanguage\resources\scene\recreation2.jpg|4387272
+map\multilanguage\resources\scene\recreation2.zip|10715
+map\multilanguage\resources\scene\wards2.jpg|4289036
+map\multilanguage\resources\scene\wards2.zip|10295
+map\multilanguage\resources\scene\sounds\swfobject.js|6880
+map\multilanguage\resources\scene\sounds\thumb.jpg|170019
+map\multilanguage\resources\scene\sounds\twviewer.swf|361553

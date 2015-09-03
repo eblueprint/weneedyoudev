@@ -1,0 +1,187 @@
+/*  Stylesheet for the Meteor Slides 1.5 slideshow
+	
+	Copy "meteor-slides.css" from "/meteor-slides/css/" to your theme's directory to replace
+	the plugin's default stylesheet.
+	
+	If you have navigation enabled, be sure to copy the "buttons.png", "next.png",
+	and "prev.png" files to your theme's images folder and update the image paths below,
+	or create new graphics to replace them.
+	
+	Learn more about customizing the stylesheet for Meteor Slides: 
+	http://www.jleuze.com/plugins/meteor-slides/customizing-the-stylesheet/
+*/
+
+/* =Slideshow
+-------------------------------------------------------------- */
+
+div.meteor-slides {
+    height: 100% !important;
+	line-height: 0;
+	margin: 0;
+	max-width: 100%;
+	overflow: visible !important;
+	padding: 0;
+	position: relative;
+	z-index: 1;
+}
+
+div.navpaged,
+div.navboth {
+	margin: 0 0 20px 0;
+}
+
+.meteor-slides .meteor-clip {
+	line-height: 0;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+}
+
+.meteor-slides .meteor-shim {
+	border: 0;
+	height: auto !important;
+	margin: 0;
+	max-width: 100%;
+	padding: 0;
+	width: auto\9; /* IE8 */
+}
+
+/* =Slide
+-------------------------------------------------------------- */
+
+.meteor-slides .mslide {
+	display: none;
+	height: 100% !important;
+	margin: 0;
+	max-width: 100%;
+	padding: 0;
+}
+
+.meteor-slides .mslide a {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.meteor-slides .mslide img {
+	border: 0;
+	display: block;
+	height: auto !important;
+	margin: auto !important;
+	max-width: 100%;
+	padding: 0;
+	width: auto\9; /* IE8 */
+}
+
+.meteor-slides .mslide img[src$='.png'] {
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE8 */   
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF); /* IE7 */
+	zoom: 1;	
+}
+
+/* =Previous/Next Navigation
+-------------------------------------------------------------- */
+
+.meteor-slides ul.meteor-nav {
+	display: block;
+	list-style: none;
+    height: inherit;
+	margin: 0 !important;
+	padding: 0;
+}
+
+ul.meteor-nav li {
+	display: inline;
+    height: 32px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.meteor-nav .prev a {
+	position: absolute;
+	bottom: 28px;
+	right: 36px;
+	left: 10px;
+}
+
+.meteor-nav .next a {
+	position: absolute;
+	bottom: 28px;
+	right: 8px;
+}
+
+.meteor-nav a {
+	display: block;
+	outline: none;
+	position: absolute!important;
+	text-indent: -9999px;
+	width: 27px;
+    height: 32px;
+	z-index: 998;
+	top: 158px;
+}
+	
+.meteor-nav .prev a {
+	background: url('/wp-content/themes/quotient/images/prev.png') no-repeat center;
+}
+
+.meteor-nav .next a {
+	background: url('/wp-content/themes/quotient/images/next.png') no-repeat center;
+}
+
+* html .meteor-nav .prev a {
+	background: url('/wp-content/themes/quotient/images/prev.gif') no-repeat center; /* IE6 */
+}
+
+* html .meteor-nav .next a {
+	background: url('/wp-content/themes/quotient/images/next.gif') no-repeat center; /* IE6 */
+}
+
+/* =Paged Navigation
+-------------------------------------------------------------- */
+
+.meteor-slides .meteor-buttons {
+    bottom: 8px;
+    height: 11px;
+    left: 285.5px;
+    padding: 6px 0 0;
+    position: absolute;
+    z-index: 999;
+}
+
+header#branding .meteor-buttons {
+	left: 5px; /* A little nudge for Twenty Eleven */
+}
+
+.meteor-buttons a {
+	background: url('/wp-content/themes/quotient/images/buttons.png') no-repeat bottom left;
+	display: block;
+	float: left;
+	width: 11px;
+	height: 11px;
+	margin: 0 3px 0 0;
+	outline: none;
+	text-indent: -9999px;
+}
+
+.meteor-buttons a:hover {
+	background: url('/wp-content/themes/quotient/images/buttons.png') no-repeat bottom right;
+}
+
+.meteor-buttons a.activeSlide {
+	background: url('/wp-content/themes/quotient/images/buttons.png') no-repeat bottom right;
+}
+
+* html .meteor-buttons a {
+	background: url('/wp-content/themes/quotient/images/buttons.gif') no-repeat bottom left; /* IE6 */
+}
+
+* html .meteor-buttons a:hover {
+	background: url('/wp-content/themes/quotient/images/buttons.gif') no-repeat bottom right; /* IE6 */
+}
+
+* html .meteor-buttons a.activeSlide {
+	background: url('/wp-content/themes/quotient/images/buttons.gif') no-repeat bottom right; /* IE6 */
+}

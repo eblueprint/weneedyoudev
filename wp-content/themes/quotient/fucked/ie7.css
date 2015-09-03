@@ -1,0 +1,28 @@
+#header-search {
+	position: absolute;
+	right: -10px;
+	top: 90px;
+}
+#footer-left {
+	position: relative;
+	top: 29px!important;
+}
+.footer-box #latest-studies {
+	z-index: -10;
+	position: relative;
+}
+.footer-box {
+	margin: 0 5px 25px 0;
+}
+#attention {
+	position: relative;
+	top: -15px;
+}
+#noteligible {
+	position: relative;
+	top: 0px;	
+}
+#enquiries .col.form .wpcf7-submit {
+	float: none;
+	line-height: normal;
+}

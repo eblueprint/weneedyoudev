@@ -1,0 +1,9 @@
+{greeting} {title} {surname}
+
+Thank you for completing our application form.
+
+We'll check over the details and if it looks as though you are suitable to be a healthy volunteer, we'll invite you into our centre to find out more about us, our facilities and clinical trials.  It will give you an opportunity to meet the team who would look after you and a better idea of what to expect if you decide to become a volunteer.
+
+We'll be in touch as soon as we can but if you'd like to get some more information about clinical trials and Quotient Clinical please click here (http://www.weneedyou.co.uk/how-clinical-trials-work/quotients-clinical-trials/).  If you've got any questions that you'd like to discuss with us feel free to give us a call on 0115 974 9000 or email us at nottingham@quotientclinical.com.
+
+Click here to see what trials we have available at the moment (http://www.weneedyou.co.uk/our-current-clinical-trials/)

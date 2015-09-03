@@ -1,0 +1,9 @@
+{greeting} {title} {surname}
+
+Thanks for completing our quick application form.  You'll start to get updates on our latest news as well as details of some of our trials. If you change your mind about wanting to receive these you can unsubscribe at any time.
+
+You won't be able to be a volunteer in any of our clinical trials without completing our full application form.  If you'd like to do this now this link will take you to the form (http://www.weneedyou.co.uk/apply-now/new-application-form/).  If you decide not to do it now you'll be able to find the form on our website at any time, or if you prefer you can call us on 0115 974 9000 for a paper copy or to go through the form with one of our team.
+
+Thanks again for your interest and we hope to welcome you as a volunteer sometime soon.  In the meantime if you'd like to find out more about taking part in a clinical trial follow this link to the FAQs section of our website (http://www.weneedyou.co.uk/faqs/). 
+
+Click here to see what trials we have available at the moment (http://www.weneedyou.co.uk/our-current-clinical-trials/)

@@ -1,0 +1,11 @@
+{greeting} {title} {surname}
+
+Thank you for applying to this study.
+
+Our team will now look over your application and we'll be in touch soon.
+
+What happens next?
+
+The next steps are...
+
+Here's a link to the FAQ section of our website (http://www.weneedyou.co.uk/faqs/) if you'd like to find out more about taking part in a trial or if you have any questions, you can contact us by calling 0115 974 9000 or emailing nottingham@quotientclinical.com.

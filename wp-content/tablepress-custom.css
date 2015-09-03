@@ -1,0 +1,19 @@
+/*.tablepress .column-1,
+.tablepress .column-2,
+.tablepress .column-3 {
+	width: 220px;
+}*/
+.tablepress td {
+	padding: 10px 24px !important;
+	border: 1px solid #DDDDDD;
+}
+
+.tablepress span {
+	padding-bottom: 5px;
+	display: inline-block;
+}
+
+.tablepress thead th {
+	background: #2A95B8;
+	color: white !important;
+}

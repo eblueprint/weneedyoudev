@@ -1,0 +1,4 @@
+[19-May-2012 20:55:35] PHP Fatal error:  Call to undefined function have_posts() in /home/seoblue/public_html/quotient/wp-content/themes/quotient/loop-quick-application-form.php on line 18
+[14-Jun-2012 12:13:02] PHP Parse error:  syntax error, unexpected '}' in /home/seoblue/public_html/quotient/wp-content/themes/quotient/quickform-to-email.php on line 112
+[14-Jun-2012 12:13:30] PHP Parse error:  syntax error, unexpected '}' in /home/seoblue/public_html/quotient/wp-content/themes/quotient/quickform-to-email.php on line 112
+[14-Jun-2012 12:14:30] PHP Parse error:  syntax error, unexpected '}' in /home/seoblue/public_html/quotient/wp-content/themes/quotient/quickform-to-email.php on line 112
