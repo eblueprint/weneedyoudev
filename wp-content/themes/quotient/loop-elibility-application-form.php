@@ -541,6 +541,12 @@ function computeform(form) {
 
 <p class="msg">If you are a heavy smoker typically you will be ineligible to become a volunteer on our panel.</p>
 
+                <label>Do you use any other nicotine products? (e.g. patches, e-cigarettes, gum)</label><br />
+
+                <p id="nicotine-yes"><input name="nicotine" value="Yes" type="radio" class="styled" /> <label for="yes">Yes</label></p>
+                <p id="nicotine-no"><input name="nicotine" value="No" type="radio" class="styled" data-bvalidator="required" data-bvalidator-msg="Please tell us if you use any other nicotine products." /> <label for="no">No</label></p>
+              
+
 
 <div class="clear"> </div><br />
 

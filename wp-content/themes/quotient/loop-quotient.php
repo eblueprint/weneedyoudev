@@ -33,100 +33,53 @@
                     	<div id="home-slider">
 							<?php // if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow( "home", "" ); } ?>
                             
-					<!-- start here -->
+	<!-- START AnythingSlider -->
+	<ul id="slider">
 
-
-	<div id="slider_wrapper">
-
-<div class="slider"> <!-- start slider container -->
-
-	<!-- TIMS VIDEO start video slide -->
-	<div class="slide">
-	<video id="video" width="593" height="327" poster="/wp-content/themes/quotient/images/poster.png" preload="preload">
-	<source src="/wp-content/themes/quotient/tim.mp4" type="video/mp4" />
-	<p>Your browser does not support html5 video element.</p>
-	</video>
-	<!-- start video controls -->
+			<!-- HTML5 Video -->
+		<li class="panel1">
+			<video width="593" height="327" poster="https://www.weneedyou.co.uk/wp-content/themes/quotient/images/poster.png">
+				<source src="tim.mp4" type="video/mp4">
+				Your browser does not support the video tag. But you could include an iframe/embeded video here.
+			</video>
+				<!-- start video controls -->
 	<div id="video-controls">
 	<img id="play-pause" src="/wp-content/themes/quotient/images/play.png" alt="play" />
 	</div>
 	<!-- end video controls -->
-	</div>
-	<!-- end video slide -->
+		</li>
 
 
-
-	<!-- VIDEO TWO start video slide Volunteer Jo pays for family holidays with payment she receives -->
-	<div class="slide">
-	<video id="video1" poster="/wp-content/themes/quotient/images/poster2.png" width="593" height="327" preload="preload">
-	<source src="/wp-content/themes/quotient/two.mp4" type="video/mp4" />
-	<p>Your browser does not support html5 video element.</p>
-	</video>
-	<!-- start video controls -->
-	<div id="video-controls">
-	<img id="play-pause1" src="/wp-content/themes/quotient/images/play.png" alt="play" />
-	</div>
-	<!-- end video controls -->
-	</div>
-	<!-- end video slide -->
-
-
-
-	<!-- VIDEO THREE start video slide Pam and Julie - volunteering for clinical trials for over 20 years -->
-	<div class="slide">
-	<video id="video2" poster="/wp-content/themes/quotient/images/poster3.png" width="593" height="327" preload="preload">
-	<source src="/wp-content/themes/quotient/three.mp4" type="video/mp4" />
-	<p>Your browser does not support html5 video element.</p>
-	</video>
-	<!-- start video controls -->
-	<div id="video-controls">
-	<img id="play-pause2" src="/wp-content/themes/quotient/images/play.png" alt="play" />
-	</div>
-	<!-- end video controls -->
-	</div>
-	<!-- end video slide -->			
-
-
-	<!-- VIDEO FOUR start video slide Why do people like David volunteer for clinical trials -->
-	<div class="slide">
-	<video id="video3" poster="/wp-content/themes/quotient/images/poster4.png" width="593" height="327" preload="preload">
-	<source src="/wp-content/themes/quotient/four.mp4" type="video/mp4" />
-	<p>Your browser does not support html5 video element.</p>
-	</video>
-	<!-- start video controls -->
-	<div id="video-controls">
-	<img id="play-pause3" src="/wp-content/themes/quotient/images/play.png" alt="play" />
-	</div>
-	<!-- end video controls -->
-	</div>
-	<!-- end video slide -->
-
-	
-	<!-- start image slide -->
-	<div class="slide">
-	<img data-src="/wp-content/themes/quotient/images/two.jpg" />
-	</div>
+			<!-- start image slide -->
+	<li class="panel2">
+	<a href="https://www.weneedyou.co.uk/clinical-trials/qcl-117375-part-d/"><img src="https://www.weneedyou.co.uk/wp-content/themes/quotient/images/1_HealthyNonSmoker65Aged-593x327v2.jpg" /></a>
+	</li>
 	<!-- end image slide -->
 
 	<!-- start image slide -->
-	<div class="slide">
-	<img data-src="/wp-content/themes/quotient/images/three.jpg"  />
-	</div>
+	<li class="panel3">
+	<a href="https://www.weneedyou.co.uk/clinical-trials/qcl-117440-part-a/"><img src="https://www.weneedyou.co.uk/wp-content/themes/quotient/images/2_pool-table-healthy-male--593x327.jpg"  /></a>
+	</li>
 	<!-- end image slide -->
 
-</div> <!-- end slider contains -->
+	<!-- start image slide -->
+	<li class="panel4">
+	<a href="https://www.weneedyou.co.uk/clinical-trials/genotyping-study/"><img src="https://www.weneedyou.co.uk/wp-content/themes/quotient/images/3_Asian-Male-slider-visual15nights-593x327.jpg"  /></a>
+	</li>
+	<!-- end image slide -->
 
 
-					<div class="navslide">
-					<p>
-						<span class="prev"><img src="/wp-content/themes/quotient/images/prev.png" alt="" /></span>
-						<span class="next"><img src="/wp-content/themes/quotient/images/next.png" alt="" /></span>
-					</p>
-				</div>
-			</div>
-	
-					<!-- end here -->
+	<!-- start image slide -->
+	<li class="panel5">
+	<a href="https://www.weneedyou.co.uk/clinical-trials/qcl-117375-part-a/"><img src="https://www.weneedyou.co.uk/wp-content/themes/quotient/images/4_non-smoker-healthy-male--593x327.jpg"  /></a>
+	</li>
+	<!-- end image slide -->
 
+
+
+	</ul> <!-- END AnythingSlider -->
+
+</div>
                             <div id="home-imgs">
                             <a href="https://www.weneedyou.co.uk/our-current-clinical-trials/"><img src="/wp-content/themes/quotient/images/latest-studies.png" alt="Latest Studies"/></a><br />
                             <a href="https://www.weneedyou.co.uk/apply-now/"><img src="/wp-content/themes/quotient/images/apply-now2.png" alt="Apply now" /></a><br />

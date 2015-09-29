@@ -75,17 +75,7 @@
 jQuery(function ($) {
 	$(document).ready(function () {
 
-$(".slider").muslider({
-	"animation_type": "horizontal",
-	"animation_duration": 900,
-	"animation_interval": 4000,
-	"animation_start": "manual",
-	"responsive": "no",
-	"width": 593,
-	"height": 327
-	});
-				
-				
+	
 
 	$.cookieCuttr({
 		cookieAnalytics: false,
@@ -112,8 +102,44 @@ jQuery(function ($) {
                 });
 		e.stopPropogation();
 	});
+
 });
+
 </script>
+
+	<!-- Anything Slider -->
+	<link rel="stylesheet" href="/wp-content/themes/quotient/css/anythingslider.css">
+	<script src="/wp-content/themes/quotient/scripts/jquery.anythingslider.js"></script>
+
+	<!-- AnythingSlider video extension; optional, but needed to control video pause/play -->
+	<script src="/wp-content/themes/quotient/scripts/jquery.anythingslider.video.js"></script>
+
+	<script>
+		// DOM Ready
+		$(function(){
+			$('#slider')
+				.anythingSlider({
+					resizeContents      : false,
+					addWmodeToObject    : 'opaque',
+					autoPlay            : true,
+					delay				: 10000,
+					hashTags			: false,
+					navigationFormatter : function(index, panel){ // Format navigation labels with text
+						return ['One', 'Two', 'Three', 'Four', 'Five'][index - 1];
+					}
+				})
+				// Initialize video extension
+				// see https://developers.google.com/youtube/player_parameters?hl=en#Parameters for a list of parameters
+				.anythingSliderVideo({
+					// video id prefix; suffix from $.fn.anythingSliderVideo.videoIndex
+					videoId : 'asvideo',
+								
+				});
+	
+	
+		});
+	</script>
+
 <?php
 	/* We add some JavaScript to pages with the comment form
 	 * to support sites with threaded comments (when in use).
@@ -169,16 +195,12 @@ window.onload = function() {
 
   // Video
 
-  var video = document.getElementById("video");
-  var video2 = document.getElementById("video2");
-  var video3 = document.getElementById("video3");
-  var video1 = document.getElementById("video1");
+  var video = document.getElementById("asvideo0");
+
 
   // Buttons
   var playButton = document.getElementById("play-pause");
-  var playButton1 = document.getElementById("play-pause1");
-  var playButton2 = document.getElementById("play-pause2");
-  var playButton3 = document.getElementById("play-pause3");
+
  
 // Event listener for the play/pause button
 
@@ -191,49 +213,11 @@ playButton.addEventListener("click", function() {
     video.setAttribute("controls","controls");
   }  
 });
-		  }
 
-
-// Event listener for the play/pause button 2
-if(video1) {
-	playButton1.addEventListener("click", function() {
-  	if (video1.paused === true) {
-    video1.play();
-    console.log(this);
-    this.style.display = "none";
-    video1.setAttribute("controls","controls");
-  }  
-});
-		   }
-
-// Event listener for the play/pause button 2
-if(video2) {
-	playButton2.addEventListener("click", function() {
-  if (video2.paused === true) {
-    video2.play();
-    console.log(this);
-    this.style.display = "none";
-    video2.setAttribute("controls","controls");
-  }  
-});
-	
 }
-  
-  
-// Event listener for the play/pause button 2
-
-  if(video3) {
-playButton3.addEventListener("click", function() {
-  if (video3.paused === true) {
-    video3.play();
-    console.log(this);
-    this.style.display = "none";
-    video3.setAttribute("controls","controls");
-  }  
-});
-					}
 
 
+ 
 
 
 };

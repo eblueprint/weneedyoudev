@@ -252,18 +252,19 @@ if ($('#bmi-select').val() == "feetlbs") {
                   });
                   });
 						</script>
-                        	<form class="live garry" id="fullapp" method="post" action="https://weneedyou.seoblueprint.co.uk/form-email-script/fullform-to-email.php" novalidate> <!-- add class="jNice" for jquery styles -->
+                        	<form class="live garry" id="fullapp" method="post" action="http://weneedyou.seoblueprint.co.uk/form-email-script/fullform-to-email.php" novalidate> <!-- add class="jNice" for jquery styles -->
                             <a href="javascript:toggleDiv('stepone');" id="togglestep1" class="step-heading"><h2>Step One: Introduction*</h2></a>
                             <div id="stepone" name="step" class="step" style="display: block;">
 
                  <div style="position:absolute;right:-1000000px;" <label class="blue">Can You Hear This?</label> 
                                 <input name="canyouhearthis" id="canyouhearthis" type="text"  placeholder="" value="" /></div>
 
-                            
-                            
+        
 
-  
-				<label>Clinical Trial: <?php echo $_POST['trialname']; ?></label><br/>
+                            
+<?php if($_GET['hidetrial'] !== 'yes/') { ?>
+        <label>Clinical Trial: <?php echo $_POST['trialname']; ?></label><br/>
+<?php } ?>
 			    	<input type="hidden" name="clinicaltrial" value="<?php echo $_POST['trialname']; ?>">
 				<input type="hidden" name="newsletter" value="<?php echo $_POST['newsletter']; ?>">
 				<input type="hidden" name="callback" value="<?php echo $_POST['callback']; ?>">
@@ -278,20 +279,40 @@ if ($('#bmi-select').val() == "feetlbs") {
             
 
                   <option disabled selected>Where did you hear about us?*</option>
-      
+    <!---
 
+                  <option <?php //if ($hear == buses) echo 'selected'; ?> value="buses">Buses</option>
+                  <option <?php //if ($hear == catchuptv) echo 'selected'; ?> value="catchuptv">Catch up TV</option>
+                  <option <?php //if ($hear == facebook) echo 'selected'; ?> value="facebook">Facebook</option>
+                  <option <?php //if ($hear == familyfriend) echo 'selected'; ?> value="familyfriend">Family/Friend</option>
+                  <option <?php //if ($hear == othersocialmedia) echo 'selected'; ?> value="othersocialmedia">Other Social Media</option>
+                  <option <?php //if ($hear == isearchedonline) echo 'selected'; ?> value="isearchedonline">I Searched Online</option>
+                  <option <?php //if ($hear == MVF) echo 'selected'; ?> value="MVF">MVF</option>
+                  <option <?php //if ($hear == newspapermagazine) echo 'selected'; ?> value="newspapermagazine">Newspaper/Magazine</option>
+                  <option <?php //if ($hear == onlineadvert) echo 'selected'; ?> value="onlineadvert">Online Advert</option>
+                  <option <?php //if ($hear == television) echo 'selected'; ?> value="television">Television</option>
+                  <option <?php //if ($hear == radio) echo 'selected'; ?> value="radio">Radio</option>
+                  <option <?php //if ($hear == other) echo 'selected'; ?> value="other">Other</option>
+
+-->
+
+                  <option <?php if ($hear == asianexpresspaper) echo 'selected'; ?> value="asianexpresspaper">Asian express paper</option>
+                  <option <?php if ($hear == asianexpresswebsite) echo 'selected'; ?>value="asianexpresswebsite">Asian express web site</option>
+                  <option <?php if ($hear == capitalarenawashroomposter) echo 'selected'; ?> value="capitalarenawashroomposter">Capital Arena Washroom Poster</option>
+                  <option <?php if ($hear == capitalarenaledboard) echo 'selected'; ?>value="capitalarenaledboard">Capital Arena LED Board</option>
                   <option <?php if ($hear == buses) echo 'selected'; ?> value="buses">Buses</option>
                   <option <?php if ($hear == catchuptv) echo 'selected'; ?> value="catchuptv">Catch up TV</option>
                   <option <?php if ($hear == facebook) echo 'selected'; ?> value="facebook">Facebook</option>
+                  <option <?php if ($hear == familyfriend) echo 'selected'; ?> value="familyfriend">Family/Friend</option>
                   <option <?php if ($hear == othersocialmedia) echo 'selected'; ?> value="othersocialmedia">Other Social Media</option>
                   <option <?php if ($hear == isearchedonline) echo 'selected'; ?> value="isearchedonline">I Searched Online</option>
-                  <option <?php if ($hear == MVF) echo 'selected'; ?> value="MVF">MVF</option>
+                  <!--<option <?php // if ($hear == MVF) echo 'selected'; ?> value="MVF">MVF</option>-->
                   <option <?php if ($hear == newspapermagazine) echo 'selected'; ?> value="newspapermagazine">Newspaper/Magazine</option>
                   <option <?php if ($hear == onlineadvert) echo 'selected'; ?> value="onlineadvert">Online Advert</option>
                   <option <?php if ($hear == television) echo 'selected'; ?> value="television">Television</option>
+                  <option <?php if ($hear == tram) echo 'selected'; ?> value="tram">Tram</option>
                   <option <?php if ($hear == radio) echo 'selected'; ?> value="radio">Radio</option>
                   <option <?php if ($hear == other) echo 'selected'; ?> value="other">Other</option>
-
                                 </select>
 								<br /><br />
 								<div id="hear1" style="display:none;" >
@@ -547,7 +568,7 @@ if ( $("#bmi").val().length > 0 )
                                 <INPUT TYPE="button" VALUE="Calculate" onClick="computeform(this.form)"><br />
                                 Your result: <INPUT TYPE=TEXT NAME=bmi id="bmi"    data-bvalidator="required,digit" data-bvalidator-msg="Please tell us your BMI" SIZE=8 value="<?php echo $_POST["bmi"];?>" readonly="readonly" ><br />
                                 </div><!-- /metreskg -->
-                                    <p class="msg">If your BMI is under 18 or over 33, typically you will be ineligible to become a volunteer on our panel.</p>
+                                    <p class="msg">If your BMI is under 18 or over 35, typically you will be ineligible to become a volunteer on our panel.</p>
 
     <label style="display: none;">Know your BMI? </label> <INPUT style="display: none;" TYPE="TEXT" name="bmiknown" value="<?php // echo $_POST["bmiknown"];?>" id="bmiknown"><br/>
 
@@ -570,6 +591,20 @@ if ( $("#bmi").val().length > 0 )
                                 <p class="msg">If you are a heavy smoker typically you will be ineligible to become a volunteer on our panel.</p>
 	
                                 <div class="clear"> </div>
+
+        <?php
+        $nicotineyes = $_POST["nicotine"];
+        $nicotineno = $_POST["nicotine"];
+        ?>
+
+                 <label>Do you use any other nicotine products? (e.g. patches, e-cigarettes, gum)</label><br />
+
+                <p id="nicotine-yes"><input name="nicotine" value="Yes" type="radio" class="styled" <?php if ($nicotineyes == Yes) echo 'checked'; ?> /> <label for="yes">Yes</label></p>
+                <p id="nicotine-no"><input name="nicotine" value="No" type="radio" class="styled" <?php if ($nicotineno == No) echo 'checked'; ?> data-bvalidator="required" data-bvalidator-msg="Please tell us if you use any other nicotine products." /> <label for="no">No</label></p>
+                
+                                <div class="clear"> </div><br />
+
+
                                 <label>Do you drink alcohol?*</label><br />
 				<?php 
 				$drinkyes = $_POST["alcohol"];
@@ -967,7 +1002,7 @@ if ( $("#otherclinics").val().length > 0 )
 								<p><label for="yes">Yes</label> <input name="otherproblems" value="Yes" type="radio" class="styled" /></p>
                                 <p><label for="no">No</label> <input name="otherproblems" value="No" type="radio" class="styled" data-bvalidator="required" data-bvalidator-msg="Please select yes or no." checked /></p>
                                 <div class="clear"> </div>
-                                <textarea name="extraInfoArea" rows="150" cols="150" onFocus="if (this.value == this.defaultValue) { this.value = ''; }">If you answered 'Yes' to any of the above questions, please give details here.                                                                   </textarea>
+                                <textarea name="extraInfoArea" rows="4" cols="50" onFocus="if (this.value == this.defaultValue) { this.value = ''; }">If you answered 'Yes' to any of the above questions, please give details here.</textarea>
                                 </li>
                             </ul>
                             <div class="prevnext">

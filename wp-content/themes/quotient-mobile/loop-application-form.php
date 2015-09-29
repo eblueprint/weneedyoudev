@@ -230,7 +230,7 @@ if ($('#bmi-select').val() == "feetlbs") {
                   });
                   });
 						</script>
-                        	<form id="fullapp" method="post" action="http://www.weneedyou.co.uk/form-email-script/fullform-to-email.php" novalidate> <!-- add class="jNice" for jquery styles -->
+                        	<form id="fullapp" method="post" action="http://www.weneedyou.seoblueprint.co.uk/form-email-script/fullform-to-email.php" novalidate> <!-- add class="jNice" for jquery styles -->
                             <a href="javascript:toggleDiv('stepone');" id="togglestep1" class="step-heading"><h2>Step One: Introduction*</h2></a>
                             <div id="stepone" name="step" class="step" style="display: block;">
                              <div style="position:absolute;right:-1000000px;" <label class="blue">Can You Hear This?</label> 
@@ -545,6 +545,20 @@ if ( $("#bmi").val().length > 0 )
                                 <p class="msg">If you are a heavy smoker typically you will be ineligible to become a volunteer on our panel.</p>
 	
                                 <div class="clear"> </div>
+
+  <?php
+        $nicotineyes = $_POST["alcohol"];
+        $nicotineno = $_POST["alcohol"];
+        ?>
+
+                 <label>Do you use any other nicotine products? (e.g. patches, e-cigarettes, gum)</label><br />
+
+                <p id="nicotine-yes"><input name="nicotine" value="Yes" type="radio" class="styled" <?php if ($nicotineyes == Yes) echo 'checked'; ?> /> <label for="yes">Yes</label></p>
+                <p id="nicotine-no"><input name="nicotine" value="No" type="radio" class="styled" <?php if ($nicotineno == No) echo 'checked'; ?> data-bvalidator="required" data-bvalidator-msg="Please tell us if you use any other nicotine products." /> <label for="no">No</label></p>
+                
+                                <div class="clear"> </div><br />
+
+
                                 <label>Do you drink alcohol?*</label><br />
 				<?php 
 				$drinkyes = $_POST["alcohol"];

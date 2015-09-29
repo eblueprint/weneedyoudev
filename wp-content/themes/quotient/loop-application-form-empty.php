@@ -259,7 +259,7 @@ function checkMyInputs(value, field){
 
 
 		</script>
-                        	<form class="islive" id="fullapp" method="post" action="https://weneedyou.seoblueprint.co.uk/form-email-script/fullform-to-email.php" novalidate> 
+                        	<form class="islive" id="fullapp" method="post" action="http://weneedyou.seoblueprint.co.uk/form-email-script/fullform-to-email.php" novalidate> 
 				<input type="hidden" name="newsletter" value="<?php echo $_POST['newsletter']; ?>">
 				<input type="hidden" name="callback" value="<?php echo $_POST['callback']; ?>">
 <!-- add class="jNice" for jquery styles -->
@@ -273,9 +273,10 @@ function checkMyInputs(value, field){
 
                                  <select name="hear" class="styled" id="select-hear" data-bvalidator="required" data-bvalidator-msg="Please select.">
                                  <option disabled selected>Where did you hear about us?*</option>
-                                 <option value="buses">Buses</option>
+                                 <!--<option value="buses">Buses</option>
                                  <option value="catchuptv">Catch up TV</option>
                                  <option value="facebook">Facebook</option>
+                                 <option value="familyfriend">Family/Friend</option>
                                  <option value="othersocialmedia">Other Social Media</option>
                                  <option value="isearchedonline">I Searched Online</option>
                                  <option value="MVF">MVF</option>
@@ -283,6 +284,23 @@ function checkMyInputs(value, field){
                                  <option value="onlineadvert">Online Advert</option>                              
                                  <option value="radio">Radio</option>
 								                 <option value="television">Television</option>
+                                 <option value="other">Other</option>-->
+                                 <option value="asianexpresspaper">Asian express paper</option>
+                                 <option value="asianexpresswebsite">Asian express web site</option>
+                                 <option value="capitalarenawashroomposter">Capital Arena Washroom Poster</option>
+                                 <option value="capitalarenaledboard">Capital Arena LED Board</option>
+                                 <option value="buses">Buses</option>
+                                 <option value="catchuptv">Catch up TV</option>
+                                 <option value="facebook">Facebook</option>
+                                 <option value="familyfriend">Family/Friend</option>
+                                 <option value="othersocialmedia">Other Social Media</option>
+                                 <option value="isearchedonline">I Searched Online</option>
+                                 <!--<option value="MVF">MVF</option>-->
+                                 <option value="newspapermagazine">Newspaper/Magazine</option>
+                                 <option value="onlineadvert">Online Advert</option>                              
+                                 <option value="radio">Radio</option>
+                                 <option value="television">Television</option>
+                                 <option value="tram">Tram</option>
                                  <option value="other">Other</option>
                                 </select>
 								<br /><br />
@@ -485,7 +503,7 @@ New Dates Implemented Here
                                 <INPUT TYPE="button" VALUE="Calculate" onClick="computeform(this.form)"><br />
                                 Your result: <INPUT TYPE=TEXT NAME=bmi  SIZE=8 value="" readonly="readonly" data-bvalidator="digit,required" data-bvalidator-msg="Please tell us your BMI"><br />
                                 </div><!-- /metreskg -->
-                                    <p class="msg">Each of the boxes above need to be completed to calculate your BMI. If your BMI is under 18 or over 33, typically you will be ineligible to become a volunteer on our panel.</p>
+                                    <p class="msg">Each of the boxes above need to be completed to calculate your BMI. If your BMI is under 18 or over 35, typically you will be ineligible to become a volunteer on our panel.</p>
 								
 
                                 <label style="display: none;">Know your BMI? </label> <INPUT style="display: none;" TYPE="TEXT" name="bmiknown" value="" data-bvalidator="digit,required" data-bvalidator-msg="Please enter your BMI"><br/>
@@ -509,10 +527,19 @@ New Dates Implemented Here
                                 <p class="msg">If you are a heavy smoker typically you will be ineligible to become a volunteer on our panel.</p>
 	
                                 <div class="clear"> </div>
+
+                 <label>Do you use any other nicotine products? (e.g. patches, e-cigarettes, gum)</label><br />
+
+                <p id="nicotine-yes"><input name="nicotine" value="Yes" type="radio" class="styled" /> <label for="yes">Yes</label></p>
+                <p id="nicotine-no"><input name="nicotine" value="No" type="radio" class="styled" data-bvalidator="required" data-bvalidator-msg="Please tell us if you use any other nicotine products." /> <label for="no">No</label></p>
+                
+                                <div class="clear"> </div><br />
+
+
                                 <label>Do you drink alcohol?*</label><br />
 
 								<p id="alcohol-yes"><input name="alcohol" value="Yes" type="radio" class="styled" /> <label for="yes">Yes</label></p>
-                                <p id="alcohol-no"><input name="alcohol" value="No" type="radio" class="styled" data-bvalidator="required" data-bvalidator-msg="Please tell us if you drink alcohol." /> <label for="no">No</label></p>
+                                <p id="alcohol-no"><input name="alcohol" value="No" type="radio" class="styled" data-bvalidator="required" data-bvalidator-msg="Please tell us if you use any other nicotine." /> <label for="no">No</label></p>
                                 <div class="clear"> </div>
 <script type="text/javascript">
 $(document).ready(function(){
@@ -908,7 +935,7 @@ if ( $("#otherclinics").val().length > 0 )
 								<p><label for="yes">Yes</label> <input name="otherproblems" value="Yes" type="radio" class="styled" /></p>
                                 <p><label for="no">No</label> <input name="otherproblems" value="No" type="radio" class="styled" data-bvalidator="required" data-bvalidator-msg="Please select yes or no." checked /></p>
                                 <div class="clear"> </div>
-                                <textarea name="extraInfoArea" rows="12" cols="150" onFocus="if (this.value == this.defaultValue) { this.value = ''; }">If you answered 'Yes' to any of the above questions, please give details here.</textarea>
+                                <textarea style="padding: 10px; width: 529px !important; height: 100px !important;" name="extraInfoArea" rows="4" cols="50" onFocus="if (this.value == this.defaultValue) { this.value = ''; }">If you answered 'Yes' to any of the above questions, please give details here.</textarea>
                                 </li>
                             </ul>
                             <div class="prevnext">

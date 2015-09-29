@@ -48,6 +48,7 @@ $smokeamount = $_POST['smokeamount'];
 $smokeamountother = $_POST['smokeamountother'];
 $lastsmoke = $_POST['lastsmoke'];
 $alcohol = $_POST['alcohol'];
+$nicotine = $_POST['nicotine'];
 $unitsperweek = $_POST['units'];
 $studies = $_POST['studies'];
 $other_clinics = $_POST['other-clinics'];
@@ -146,11 +147,11 @@ $node->field_where_did_you_hear_about_u['und'][0]['value'] = protect($hear);
 
 if($hear == "recommendation") {
 
-	$node->field_hear_other['und'][0]['value'] = protect($hearrec);
+    $node->field_hear_other['und'][0]['value'] = protect($hearrec);
 
 } else {
 
-	$node->field_hear_other['und'][0]['value'] = protect($hearother);
+    $node->field_hear_other['und'][0]['value'] = protect($hearother);
 
 }
 
@@ -311,6 +312,10 @@ No Never or quit more than 6 months ago
 Yes 11
 Yes 10
 */
+
+// Nicotine yes/no
+
+$node->field_nicotine['und'][0]['value'] = protect($nicotine);
 
 // Alcohol yes/no
 
@@ -475,4 +480,3 @@ if($node = node_submit($node)) { // Prepare node for saving
 
 
 ?>
-

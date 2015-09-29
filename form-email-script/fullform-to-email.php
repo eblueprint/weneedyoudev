@@ -102,6 +102,7 @@ $smoke = $_POST['smoke'];
 $smokeamount = $_POST['smokeamount'];
 $smokeamountother = $_POST['smokeamountother'];
 $lastsmoke = $_POST['lastsmoke'];
+$nicotine = $_POST['nicotine'];
 $alcohol = $_POST['alcohol'];
 $unitsperweek = $_POST['units'];
 $studies = $_POST['studies'];
@@ -156,6 +157,7 @@ $newsletter = $_POST['newsletter'];
 
 //Validate first
 $email_from = 'nottingham@quotientclinical.com';//<== update the email address
+//$email_from = 'garry.bain@gmail.com';//<== update the email address
 $email_subject = "Full Application Form Submission";
 $email_body = "
 A new applicant has submitted their details:
@@ -187,6 +189,7 @@ Weight in Stone / Pounds: $weightstones / $weightpounds
 BMI: $feetbmi $metresbmi $bmiknown
 
 Do you smoke?: ".($smokeamount>0 && $smokeamount!=6?"Yes ":"No ").($smokeamount==6 ? "Quit less than 6 months ago " :($smokeamount == 0 ? "Never or quit more than 6 months ago ":  ($smokemount >0 ?"how many?: ":$smokeamount)))." $smokeamountother
+Do you use any other nicotine products?: $nicotine
 Do you drink alcohol?: $alcohol ".($alcohol=="Yes"?" how many units do you drink per week?: $unitsperweek":"")."
 Have you any specific dietary requirements?: $diet
 Are you happy to undergo a urine test to check for non-medical drugs?: $urinetest
